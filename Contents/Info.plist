@@ -2,11 +2,30 @@
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CFBundleIdentifier</key>
-	<string>com.plexapp.plugins.channel9</string>
-	<key>PlexFrameworkVersion</key>
-	<string>2</string>
-        <key>PlexClientPlatforms</key>
-        <string>*</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.plexapp.plugins.channel9</string>
+    <key>PlexClientPlatforms</key>
+    <string>*</string>
+    <key>PlexFrameworkVersion</key>
+    <string>2</string>
+    <key>PlexMediaContainer</key>
+    <array>
+      <string>M4V</string>
+      <string>MOV</string>
+    </array>
+    <key>PlexVideoCodec</key>
+    <array>
+      <string>H.264</string>
+    </array>
+    <key>PlexURLServices</key>
+    <dict>
+      <key>Channel9 MSDN</key>
+      <dict>
+        <key>URLPattern</key>
+        <string>http://.*channel9\.msdn\.com/.*</string>
+        <key>Identifier</key>
+        <string>com.plexapp.plugins.channel9</string>
+      </dict>
+    </dict>
 </dict>
 </plist>
